@@ -76,7 +76,7 @@ https://github.com/llSourcell/tensorflow_image_classifier
 The details regarding the installation of all pre-requisites and running the application is explained on a 3-minute video we have made.
 
 ```
-video link here
+https://drive.google.com/open?id=1QQTGaBs_7iZDUGBfzYdpc2Rkxugd1oYS
 ```
 
 ## Authors
