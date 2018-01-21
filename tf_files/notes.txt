@@ -1,0 +1,72 @@
+Image Classifier for Minerals
+
+Team:
+-Steven Muliamin
+-Michael Fernanlie
+
+
+run Docker for Windows
+run PowerShell / Command Prompt
+
+docker run -it gcr.io/tensorflow/tensorflow:latest-devel
+exit (ctrl+D)
+
+docker run -it -v $HOME/tf_files:/star_wars/ gcr.io/tensorflow/tensorflow:latest-devel
+
+cd /tensorflow
+git pull
+
+
+python tensorflow/examples/image_retraining/retrain.py \
+--bottleneck_dir=/star_wars/bottlenecks \
+--how_many_training_steps 500 \
+--model_dir=/star_wars/inception \
+--output_graph=/star_wars/retrained_graph.pb \
+--output_labels=/star_wars/retrained_labels.txt \
+--image_dir /star_wars/star_wars
+
+python tensorflow/examples/image_retraining/retrain.py
+
+
+test image:
+
+python /star_wars/label_image.py /star_wars/testing/minerals/malachite/1.jpg
+
+python /star_wars/label_image.py (img path)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+STOP ALL RUNNING DOCKER
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+
+completely re-train (delete):
+bottlenecks
+inception
+retrained_graph.pb
+retrained_labels
+
+
+------------------------------------------------------------
+python tensorflow/examples/image_retraining/retrain.py \
+--bottleneck_dir=/tf_files/bottlenecks \
+--how_many_training_steps 500 \
+--model_dir=/tf_files/inception \
+--output_graph=/tf_files/retrained_graph.pb \
+--output_labels=/tf_files/retrained_labels.txt \
+--image_dir /tf_files/star_wars
+------------------------------------------------------------
