@@ -20,6 +20,7 @@ Docker is free to download and you can get yours on the link below.
 https://www.docker.com/get-docker
 ```
 
+
 #### Tensorflow
 
 Tensoflow is an open-source software librabry developed and released by Google in 2015. Tensorflow provides library for various tasks and one of them including a machine learning applications like neural networks. 
@@ -47,6 +48,7 @@ And then we are ready to install Tensorflow
 pip install tensorflow
 ```
 
+
 #### Fatkun
 
 For our dataset, we are downloading it manually from google image search results. To help us with the tedious work, we are using a chrome extension called Fatkun to enable us to download all images that appears on google search first page. We will have to manually filter each image before downloading since we want to avoid bad dataset.
@@ -57,21 +59,12 @@ Fatkun extension for google chrome can be found on the link below
 https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en
 ```
 
+
 #### Inception Model
 
 Inception model is a pre-trained Convolutional Neural Networks that we use for this project. It saves us from training the data over all the neural network layers for each new dataset. It was developed by Google and has been tested with over 100k images.
 
 Inception model is available here
-
-```
-https://chrome.google.com/webstore/detail/fatkun-batch-download-ima/nnjjahlikiabnchcpehcpkdeckfgnohf?hl=en
-```
-
-### Installing
-
-A step by step series of examples that tell you have to get a development env running
-
-Say what the step will be
 
 ```
 https://github.com/llSourcell/tensorflow_image_classifier
